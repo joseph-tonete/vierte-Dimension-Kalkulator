@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4º calculator</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/page-title-icon-white.png">
+    <!--Importação das bibliotecas javascript mathjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+</head> 
+<body>
+    <!--Componentes do site-->
+    <div class="mainComponents">
+        <form id="onlyForm">
+            <h3 title="Função por 'x', 'y', 'z' que determina o valor no ponto 'a'. Exemplo de função: x + y + z">Função:</h3>
+            <label for="expressionInput"> a = </label> 
+            <input id="expressionInput" required> 
+            <input type="submit" id="submitButton" value="Calcular">    
+            <input type="button" id="cleanGraphButton" value="Limpar gráfico"><br>
+            <label id="labelErrorMessage"></label><br><br>
+
+            <h3 title="Configurações da cor mínima, cor máxima, resolução de cubos por eixo e escala do gráfico.">Configurações:</h3>
+            <label for="minGraphColor"> De: </label> 
+            <input type="range" id="minGraphColor" value="0" min="0" max="360"><br>
+            <label for="maxGraphColor"> Para: </label> 
+            <input type="range" id="maxGraphColor" value="120" min="0" max="360"><br>
+            <lable for="inputGraphResolution" title="Número de cubos em cada um dos eixos"> Resolução: </lable>
+            <input type="number" id="inputGraphResolution" value="20" min="1" required><br>
+            <lable for="inputGraphScale">Escala:</lable>
+            <input type="number" id="inputGraphScale" value="10" min="1" required><br><br>
+
+            <h3 title="Restringe a aparição de determinados pontos no gráfico de acordo com as métricas abaixo.">Restrições:</h3>
+            <input type="number" value="" id="inputMinValueX">< X <<input type="number" value="" id="inputMaxValueX"><br>
+            <input type="number" value="" id="inputMinValueY">< Y <<input type="number" value="" id="inputMaxValueY"><br>
+            <input type="number" value="" id="inputMinValueZ">< Z <<input type="number" value="" id="inputMaxValueZ"><br>
+            <input type="number" value="" id="inputMinValueA">< A <<input type="number" value="" id="inputMaxValueA"><br><br>
+        
+            <h3 title="Mostra ou não determinados eixos do gráfico.">Mostrar:</h3>
+            <input type="checkbox" id="checkboxShowAxisX" checked> 
+            <label for="checkboxShowAxisX"> Eixo X </label><br>
+            <input type="checkbox" id="checkboxShowAxisY" checked> 
+            <label for="checkboxShowAxisY"> Eixo Y </label><br>
+            <input type="checkbox" id="checkboxShowAxisZ" checked> 
+            <label for="checkboxShowAxisZ"> Eixo Z </label>
+        </form>
+    </div>
+    <div class="graphInformation">
+        <div>
+            <div id="graphProperties">X: 0.0 / Y: 0.0 / Z: 0.0</div>
+        </div>
+        <div>
+            <div id="graphValue">Valor: 0.0</div>
+            <div id="colorCubeShow"> </div>
+        </div>
+        <div>    
+            <p id="graphMaxValue"> Máximo: 0.0</p>
+            <div id="colorCubeMax"> </div>
+        </div>
+        <div>
+            <p id="graphMinValue"> Mínimo: 0.0</p>
+            <div id="colorCubeMin"> </div>      
+        </div>
+    </div>
+</body>
+    <!--Scripts e importação do three.module.js-->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./modules/three.module.js",
+                "three/addons/": "./jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="sketch.js"></script>   
+</html>

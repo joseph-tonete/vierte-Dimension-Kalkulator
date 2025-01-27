@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient( rgba(0,0,0,0) 80%, rgba(0,0,0,0.1));
+}
+
+.mainComponents, .graphInformation {
+    position: absolute;
+    padding: 10px;
+}
+
+.mainComponents *, .graphInformation * {
+    margin-bottom: 4px;
+}
+
+#minGraphColor, #maxGraphColor {
+    margin-bottom: 0px;
+    -webkit-appearance: none;
+    appearance: none; 
+    background-image: linear-gradient(to right, 
+    hsl(0, 90%, 70%), hsl(60, 90%, 70%), 
+    hsl(120, 90%, 70%),hsl(180, 90%, 70%),
+    hsl(240, 90%, 70%),hsl(300, 90%, 70%),
+    hsl(360, 90%, 70%));
+    height: 7px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.478);
+}
+
+input[type="number"]{
+    width: 55px;
+} 
+
+.graphInformation {
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.graphInformation > * {
+    display: flex;
+    justify-content: end;
+
+}
+
+#colorCubeShow, #colorCubeMax, #colorCubeMin {
+    margin-left: 4px;
+    height: 20px;
+    width: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.459)
+}   
+
+#labelErrorMessage {
+    color: red;
+}
