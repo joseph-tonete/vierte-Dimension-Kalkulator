@@ -1,0 +1,41 @@
+v 0.1.4 - Ótimo
+	Acho que eu não vou fazer mais documentação, muito chato.
+	
+v 0.1.3 - Bem funcional
+	PÁGINA DA WEB
+	Inserção dos restritores da criação do gráfico, do nível de resolução e das cores.
+	Uso de um form para criação do gráfico (melhor para informar os valores corretamente)
+	DESEMPENHO
+	Função para adicionar a cena apenas cubos que estão aparecendo na tela. 
+
+v 0.1.2 - Parcialmente funcional
+	PÁGINA DA WEB
+	Inclusão de botôes de mostrar e ocultar eixos e planos (funcionando)
+	TEXTO
+	Inclusão de texto das coordenadas junto aos eixos do gráfico.
+	CLASSES
+	Criação de classes para criação dos objetos do THREE.js
+	GRÁFICO
+	Criação dos cubos e inserção dos mesmos na viewport. 
+
+v 0.1.1
+	VIEWPORT 
+	Adição de eixos extras, planos de base e cones nas pontas dos eixos.
+	
+
+v 0.1.0
+	CAMERA
+	Mudança para camera ortogonal. Atribuição do TrackballControl para a câmera.
+	Correção da proporção da câmera para o renderer.
+	THREE.JS
+	Mudança de local de biblioteca de CDN para arquivo local.
+	CÓDIGO
+	Organização básica do código.
+	CANVAS
+	Mudança de cor de fundo para transparente.
+
+v 0.0.0 
+	THREE.JS
+	Inserção do three.js e visualização da viewport na página. Os eixos foram os únicos elementos adicionados. Não há nenhuma funcionalidade de movimentação da câmera e não há nenhum gerador de gráfico.
+	MATH
+	Inserção do math.js para a leitura das equações. 
