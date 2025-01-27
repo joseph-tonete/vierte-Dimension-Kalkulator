@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4º calculator</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/page-title-icon-white.png">
+    <!--Importação das bibliotecas javascript mathjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    
+</head>
+<body>
+    <!--Componentes do site-->
+    <div class="mainComponents">
+        <h3>Equação:</h3>
+        a = <input id="expressionInput"> <button id="botaoCalcular">►</button><br><br>
+        De <input type="color" id="colormin"> Para <input type="color" id="colormax"><br><br>
+
+        <h3>Mostrar:</h3>
+        <input type="checkbox" id="plano" checked onchange=""> Plano <br>
+        <input type="checkbox" id="eixoX" checked onchange=""> Eixo X <br>
+        <input type="checkbox" id="eixoY" checked onchange=""> Eixo Y <br>
+        <input type="checkbox" id="eixoZ" checked onchange=""> Eixo Z <br>
+    </div>
+</body>
+    <!--Scripts e importação do three.module.js-->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./modules/three.module.js",
+                "three/addons/": "./jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="sketch.js"></script>   
+</html>

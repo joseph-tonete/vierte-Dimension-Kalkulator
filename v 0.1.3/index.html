@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4º calculator</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/page-title-icon-white.png">
+    <!--Importação das bibliotecas javascript mathjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+</head>
+<body>
+    <!--Componentes do site-->
+    <div class="mainComponents">
+        <form id="onlyForm">
+            <h3>Equação:</h3>
+            <label for="expressionInput"> a = </label> 
+            <input id="expressionInput" required> 
+            <input type="submit" id="submitButton" value="Calcular"><br><br>
+
+            <h3>Configurações:</h3>
+            <lable for=""> Resolução: </lable>
+            <input type="number" id="inputGraphResolution" value="20" required><br>
+            <label for="minGraphColor"> De: </label> 
+            <input type="range" id="minGraphColor" value="0" min="0" max="360"><br>
+            <label for="maxGraphColor"> Para: </label> 
+            <input type="range" id="maxGraphColor" value="120" min="0" max="360"><br><br>
+
+            <h3>Mostrar:</h3>
+            <input type="checkbox" id="checkboxShowAxisX" checked> 
+            <label for="checkboxShowAxisX"> Eixo X </label><br>
+            <input type="checkbox" id="checkboxShowAxisY" checked> 
+            <label for="checkboxShowAxisY"> Eixo Y </label><br>
+            <input type="checkbox" id="checkboxShowAxisZ" checked> 
+            <label for="checkboxShowAxisZ"> Eixo Z </label><br><br>
+
+            <h3>Restrições:</h3>
+            <input type="number" value="-10" id="inputMinValueX">< X <<input type="number" value="10" id="inputMaxValueX"><br>
+            <input type="number" value="-10" id="inputMinValueY">< Y <<input type="number" value="10" id="inputMaxValueY"><br>
+            <input type="number" value="-10" id="inputMinValueZ">< Z <<input type="number" value="10" id="inputMaxValueZ"><br>
+            <input type="number" value="" id="inputMinValueA">< A <<input type="number" value="" id="inputMaxValueA"><br>
+        </form>
+    </div>
+</body>
+    <!--Scripts e importação do three.module.js-->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./modules/three.module.js",
+                "three/addons/": "./jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="sketch.js"></script>   
+</html>
