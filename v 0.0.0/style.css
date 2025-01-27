@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow: hidden;
+}
+
+.mainComponents {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    background-image: radial-gradient( rgba(0,0,0,0) 80%, rgba(0,0,0,0.1));
+
+}
