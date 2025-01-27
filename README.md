@@ -23,18 +23,24 @@ OPERADORES:
   Os operadores básicos da calculadora são o '+', '-', '/' e '*'.
   Operador de exponenciação e raiz é o '^' e o 'sqrt()' ou '^0.5'.
   Também são aceitos as funções de 'sin(), cos(), tan()'.
+  A função 'ln()' está aí, por mais que eu não goste dela.
   A função absolute deixa qualquer valor de dentro dela positivo: 'abs()'.
 
   Para você que já está com o programa funcionando, aqui estão algumas equações que dão um resultado legal!
 
   x + y + z 
   x + y + z Restrição: - < A < 0
+  ln(abs(x+y+z))
   cos(x + y +z)
   cos(x) + cos(y) + cos(z) Restrição: 0 < A < - ou - < A < 0
   (x^2 + y^2 + z^2)^0.5 Restição: 0 < X < - e - < A < 10
   (x^2 + y^2)^0.5 Restição: 0 < X < - e - < A < 10
-  
-  
+  1/x + 1/y + 1/z
+  cos(x+y) + y/4 + z/4
+  x^5 - y^5 - z^5
+  cos(x^3 + y^3 + z^3)
+  ln(abs(x))+ln(abs(y))-ln(abs(z))
+  ln(abs(x+y+z))+ln(abs(x+y-z))+ln(abs(x-y+z))+ln(abs(-x+y+z))
   
 
   
