@@ -28,10 +28,12 @@ OPERADORES:
   Para você que já está com o programa funcionando, aqui estão algumas equações que dão um resultado legal!
 
   x + y + z 
+  x + y + z Restrição: - < A < 0
   cos(x + y +z)
   cos(x) + cos(y) + cos(z) Restrição: 0 < A < - ou - < A < 0
   (x^2 + y^2 + z^2)^0.5 Restição: 0 < X < - e - < A < 10
   (x^2 + y^2)^0.5 Restição: 0 < X < - e - < A < 10
+  
   
   
 
